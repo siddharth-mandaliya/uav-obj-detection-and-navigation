@@ -118,9 +118,6 @@ class TargetDetection:
         cv2.imwrite("Image.jpg", frame2)
         
         return human_coordinates, object_coordinates
-        
-path_to_yolo = r"./tph-yolov5"
-path_to_model = r"./tph-yolov5/pretrained-weights/navigation_detection.pt"
 
 def gstreamer_pipeline (capture_width=1920, capture_height=1080, display_width=640, display_height=360, framerate=60, flip_method=0) :   
     return ('nvarguscamerasrc ! ' 
@@ -134,6 +131,9 @@ def gstreamer_pipeline (capture_width=1920, capture_height=1080, display_width=6
 
 
 def main():
+    path_to_yolo = r"./yolov5-transformer"
+    path_to_model = r"./yolov5-transformer/pretrained-weights/navigation_detection.pt"
+    
     # cam = cv2.VideoCapture(gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER)
     # result, image = cam.read()
     # if result:
