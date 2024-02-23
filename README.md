@@ -1,4 +1,4 @@
-# uav-obj-detection-and-navigation
+# UAV Object Detection and Navigation
 
 **drone_target_navigation.py:** This file contains the code responsible for guiding the drone based on objects detected using the YOLO algorithm.
 
