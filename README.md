@@ -1,11 +1,11 @@
 # uav-obj-detection-and-navigation
 
-drone_target_navigation.py is has the code for drone navigation based on the objects detected with yolo algorithm.
+drone_target_navigation.py: This file contains the code responsible for guiding the drone based on objects detected using the YOLO algorithm.
 
-call_from_yolo.py has the code to detect the objects and humans from th camera feed.
+call_from_yolo.py: Here, you'll find the code to identify objects and humans from the camera feed.
 
-The navigation code presents the operator with the list of all possible target and option to navigate to the targets. After reaching the target it has the option to trigger the servo motor for the drop based on the input by the operator.
+The navigation code offers the operator a list of potential targets and the ability to navigate to them. Once a target is reached, there's an option to activate the servo motor for dropping based on operator input.
 
-The mid-point to take images by the drone needs to be updated as per requirment.
+Please note: The midpoint for capturing images with the drone may need adjustment based on specific requirements.
 
-The current yolo model is trained on 1379 images of a 1920 x 1080 px taken from a height of 100 feet. The model can also be trained on personalized dataset for better output in required situations.
+The current YOLO model is trained on a dataset comprising 1379 images sized at 1920 x 1080 pixels, taken from a height of 100 feet. For enhanced performance in various scenarios, the model can also be trained on personalized datasets.
