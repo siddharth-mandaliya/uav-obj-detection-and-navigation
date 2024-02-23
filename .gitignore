@@ -1,2 +1,6 @@
 #Files to Ignore
 .DS_Store
+*/.DS_Store
+
+#Directories to Ignore
+yolov5-transformer/__pycache__
